@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+
+{% block menu %} 
+{% endblock %}
+{% block content %}
+
+<div class="container">
+    <div class="connexion-panel">
+        <div class="col-7 connexion-block">
+            <div class="row">
+                <div class="col-12 tacenter">
+                    <h1 class="site-title">Bienvenue sur PlanHelper !!</h1>
+                </div>
+            </div>
+
+            <div class="row aligncont">
+                <div class="col-10 tacenter blockconnect">
+                        <h2> Vous connecter</h2>
+                            <form id="login-form"> 
+                                <p>Pseudo:</p>
+                                    <input type="text" id='LOGIN'>
+                                    <p id="errorlogin" class="errorform"></p>
+                                <p>Mot de passe:</p>
+                                    <input type="password" id='PASS'>
+                                    <p id="errorpass" class="errorform"></p>
+
+                                
+                            </form>
+
+                            
+                </div>
+            </div>
+            <div class="row aligncont">
+                    <button type="submit" id="loginbtn" class="btn btn-success">Connexion</button>
+            </div>
+
+            <div class="row create aligncont">
+                <div class="col-10 tacenter not-member" > 
+                    <p>Pas encore membre ?  <a href="register" >Creer un compte</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} 
+{% block script %}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+{% endblock %} 

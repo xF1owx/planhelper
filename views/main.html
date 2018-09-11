@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+
+<link rel="stylesheet" href="http://localhost/planhelper/assets/css/style.css">
+<link rel="stylesheet" href="http://localhost/planhelper/assets/css/bootstrap.min.css" >  
+
+
+<title>PlanHelper</title>
+</head>
+
+
+<body>
+{% block menu %} 
+
+<div class=" row menu">
+    <div class="col-12 block-menu">
+        <div class="menu-logo">
+            <div class="logo-slot">
+                <a class="site-title margleft">PLANHELPER</a>
+            </div>
+        </div>
+        <div class="menu-btns">
+            <div class="menu-item"><p class="text-menu-item"><a href="/planhelper/accountPage">MA PAGE </a></p></div>
+            <span class="menu-separator">|</span>
+            <div class="menu-item"><p class="text-menu-item"><a href="/planhelper/orga"> ORGAS </a></p></div>
+            <span class="menu-separator">|</span>
+            <div class="menu-item"><p class="text-menu-item"> <a href="/planhelper/participate">PARTICIPATION</a></p></div>
+            <span class="menu-separator">|</span>
+            <div class="menu-item"><p class="text-menu-item"> <a href="/planhelper/creation" >CREER </a></p></div>
+            <span class="menu-separator">|</span>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %} {% endblock %}
+
+</body>
+
+<footer> 
+    {% block footer %}
+    <div class="row">
+        <a class="disconnect-btn margleft margtop" href="models/logout.php">Déconnexion</a>
+    </div>
+    {% endblock %}
+</footer>
+
+
+{% block script %} 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/leaflet.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/ajax.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/login.js"></script>
+
+
+{% endblock %} 
+    
+        
+
+</html> 

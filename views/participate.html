@@ -1,0 +1,68 @@
+{% extends "main.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-4">
+        <p class="margleft ">Lister les courses par : </p>
+    </div>
+</div>
+
+<div class="row">
+
+        <button class="btn btn-success margleft margtop" id="list-by-orga"> Liste par Organisation </button> 
+        <button class="btn btn-success margleft margtop" id="list-all-course"> Toutes les courses </button>
+</div>
+
+<div class="row">
+    <div class="col-4 searchresult margleft margtop" id="searchresult">
+        </div>
+
+    <div class="col-4 details-orga margleft margtop" id='block-details'>
+        <p class="margtop margleft" > Details </p>
+            <div id="details-orga">
+            <div class="name-orga">
+                <p id="displayorganame"></p>
+                <p id="displayorgadetails"></p>
+            </div>
+            </div>
+                        
+        <div class="slot-btn-details aligncont">
+        <div>
+            <button class="btn btn-success margbot" id="button-course-orga" > Afficher les courses </button>
+        </div>
+        </div>
+    </div> 
+</div>
+
+<div class="row">      
+    <div class="col-3 course-list margtop margleft" id="block-course-list">
+            <p class="margtop margleft" > Liste des Courses </p>
+            <div id="slot-courses">
+            
+            </div>
+        </div>
+        <div class="col-6 margleft margtop margbot" id="course-details">
+                <p class="margtop">Détails de la course</p>
+                <p>Créateur de la course : <span id="createur-course"></span></p>
+                <p>Nom de la course : <span id="course-name"></span></p>
+                <p>Nom de l'objet : <span id="nameobject"></span></p>
+                <p>Description de l'objet : <span id="descobject"></span></p>
+                <p>Départ de la course : <span id="course-start"></span></p>
+                <p>Arrivée de la course : <span id="course-end"></span></p>
+                <p>Organisation : <span id="orga_name"></span></p>
+                <p>Description de l'organisation : <span id="descorga"></span></p>
+                <div class="btnrow">
+                    <a id="show-on-mapbtn"><button class="btn btn-success" id="show-on-map" > Voir sur la carte  </button></a>
+                   
+                </div>  
+    </div>
+    
+       
+             
+</div>
+
+{% endblock %}
+{% block footer %}
+    <div class="row">
+        <a class="disconnect-btn margleft margtop" href="models/logout.php">Déconnexion</a>
+    </div>
+    {% endblock %}

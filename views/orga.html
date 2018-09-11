@@ -1,0 +1,105 @@
+{% extends "main.html" %}
+{% block content %}
+
+
+<div class="lol">
+    <div class="row">
+        <div class="delete-confirmed margleft margtop" id="delete-confirmed">
+                <p> Organisation supprimée avec succès !</p>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-3 orgalist margtop margleft">
+            <div class="tacenter">
+            <p class="margtop margleft" > Mes organisations </p>
+        </div>
+            <div id="slot-orga">
+           
+            </div>
+
+        </div>
+       
+        <div class="col-3 details-orga margleft margtop" id='block-details'>
+            <p class="margtop margleft" > Details </p>
+            <div id="details-orga">
+            <div class="name-orga">
+                <p id="displayorganame"></p>
+                <p id="displayorgadetails"></p>
+
+            </div>
+            
+            </div>
+            <div class="slot-btn-details">
+            <div>
+             <button class="btn btn-success margbot" id="button-course-orga" > Afficher les courses </button>
+            </div>
+            <div>
+             <button class="btn btn-success" id="button-delete-orga" > Supprimer l'organisation </button>
+            </div>
+            <div>
+                    <button class="btn btn-success margbot margtop" id="button-orga-members" > Afficher les Membres </button>
+            </div>
+            </div>
+            <div class="confirm-delete" id="confirm-delete">
+                <div>
+                    <p class="margleft margtop">Etes-vous sure ?</p>
+                </div>
+                
+                <div class="aligncont margtop">
+
+                    <button class="btn btn-danger" id="button-confirm-delete-orga" > OUI </button>
+                    <button class="btn btn-sucess" id="button-abort-delete-orga" > NON </button>
+
+                </div>
+            
+            </div>
+
+        </div>
+        <div class="col-3 course-list margtop margleft" id="block-course-list">
+            <p class="margtop margleft" > Liste des Courses </p>
+            <div id="slot-courses">
+            
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 margleft margtop margbot" id="course-details">
+            <p class="margtop">Détails de la course</p>
+            <p>Créateur de la course : <span id="createur-course"></span></p>
+            <p>Nom de la course : <span id="course-name"></span></p>
+            <p>Nom de l'objet : <span id="nameobject"></span></p>
+            <p>Description de l'objet : <span id="descobject"></span></p>
+            <p>Départ de la course : <span id="course-start"></span></p>
+            <p>Arrivée de la course : <span id="course-end"></span></p>
+            <p>Organisation : <span id="orga_name"></span></p>
+            <p>Description de l'organisation : <span id="descorga"></span></p>
+            <div class="btnrow">
+                <a id="show-on-mapbtn"><button class="btn btn-success" id="show-on-map" > Voir sur la carte  </button></a>
+                <a id="delete-course"><button class="btn btn-success margleft" id="delete-this-course" > Supprimer la course  </button>
+            </div>
+            <div class="verify-delete-course row margtop" id="div-confirmation">
+                <div class="aligncont ">
+                    <a id="confirm-delete-course"><button class="btn btn-danger" id="confirm-delete-course" > Oui </button>
+                    <a id="abort-delete-course"><button class="btn btn-success confirm-btns" id="abort-delete-course" > Non  </button>   
+                </div>
+                
+            </div>
+            <div id="confirm-delete-message" class="delete-confirmed margleft margtop">
+                    <p> La course a bien été supprimée </p>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/loadinfo.js"></script>
+<script type="text/javascript" src="assets/js/visuals.js"></script>
+<script type="text/javascript" src="assets/js/ajax.js"></script>
+<script type="text/javascript" src="assets/js/organav.js"></script>
+{% endblock %} 

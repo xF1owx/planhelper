@@ -1,0 +1,89 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+    <div class="col-6 helloblock">
+    <div class="row">
+        <div class="col-4">
+            <h2>
+                <p id='puser'></p>
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+             <p> Selectionnez la ville correspondant à votre code postal :<p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <select class="cityselect custom-select margbot" id="citylist"></select>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary margleft" id="buttongo" type="submit">GO !</button>
+        </div>
+    </div> 
+
+    </div>
+    <div class="col-4 notifs">
+        <div class="tacenter">
+        <p class="margtop">Notifications</p>
+    </div>
+    </div>
+    </div>
+   <div class="content">
+   <div class="row row-content">
+        <div id="map"class="col-6"></div>
+             
+     
+
+        <div id="menu" class="tacenter block-item col-4">
+            <div class="title-menu">
+
+                <p> Courses a Proximité </p>
+                <select id="course-select">
+                    <option value="10"> 10 km </option>
+                    <option value="20"> 20 km </option>
+                    <option value="30"> 30 km </option>
+                    <option value="50"> 50 km </option>
+                    <option value="100"> 100 km </option>
+                </select>
+                <button class="btn btn-primary" id="button-dist" type="submit" disabled> GO !</button>
+            </div>
+                <div id="course-list-container">
+                    <div class="row">
+                        <p class="course-list-item"> </p> 
+                    </div>
+                    <div class="row">
+                        <p class="course-list-item">  </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+ </div>
+ 
+</div>
+
+{% endblock %}
+
+
+
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/login.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/loadinfo.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/app.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/ajax.js"></script>
+{% endblock %} 

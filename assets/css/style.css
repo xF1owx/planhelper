@@ -1,0 +1,365 @@
+@font-face {
+    font-family: mainF;
+    src: url(assets/fonts/Righteous-Regular.ttf);
+}
+
+.menu{
+    height:80px;
+    background-color: #49a5bf; 
+    margin-top:10px;
+    margin-top: 0;
+    margin-bottom:20px;
+    border-bottom: 2px solid rgba(112, 121, 253, 0.959);
+}
+.menu-separator{
+    font-size: 20px;
+    color: white;
+
+}
+.menu-logo{
+    height: 100%;
+    width:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-slot{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btns{
+    display: flex;
+    margin-right: 15%;
+align-items: center;
+}
+.notifs{
+    height: auto;
+    width: 80%;
+    background-color: #cecece99;
+    margin-left:58px;
+}
+.notifications{
+    width: 80%;
+    background-color: #cecece99;
+}
+.block-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.helloblock{
+    background-color: #cecece99;
+}
+.menu-btns{
+    height: 100%;
+    width:60%;
+}
+.menu-item{
+    width:40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item a{
+    margin:20px;
+    font-family: mainF;
+}
+.menu-item a:hover{
+   text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+/* UTILITAIRES  */
+
+.tacenter {
+    text-align: center;
+}
+.aligncont{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.margleft{
+    margin-left:4%;
+}
+.margbot{
+    margin-bottom:4%;
+}
+.margright{
+    margin-right:4%;
+}
+.orgalist{
+    height: 400px;
+    background-color: #0000001a;
+
+}
+.margtop{
+    margin-top:4%;
+}
+
+/* UTILITAIRES FIN */
+
+
+.blockconnect{
+    margin-top:50px;
+}
+
+.create{
+    margin-top:20px;
+}
+.formcontent{
+    background-color: #0000001a;
+}
+.errorform{
+    color:red;
+}
+#map{
+width: 500px;
+height: 400px;
+
+}
+#div-form-orga{
+    display:none;
+}
+#div-form-course{
+   display:none;
+}
+#orga-created-message{
+    background-color: #3ade1d;
+    height:50px;
+    display:none;
+    border-radius:5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#course-created-message{
+    background-color: #3ade1d;
+    height:50px;
+    display:none;
+    border-radius:5px;
+    justify-content: center;
+    align-items: center;
+
+}
+#delete-confirmed{
+    background-color: #3ade1d;
+    height:50px;
+    display:none;
+    border-radius:5px;
+    justify-content: center;
+    align-items: center;
+
+}
+#participate-form{
+    display:none;
+}
+#searchresult{
+    background-color: #0000001a;
+    min-height: 100px;
+    padding-top: 10px;
+    display:none;
+}
+#confirm-delete-message{
+    background-color: #3ade1d;
+    height:50px;
+    display:none;
+    border-radius:5px;
+    justify-content: center;
+    align-items: center;
+
+}
+.orga-selection{
+    width:100%;
+    border-radius:4px;
+    background-color: #cecece99;
+}
+.course-selection{
+    width:100%;
+    border-radius:4px;
+    background-color: #cecece99;
+}
+.join-course-form{
+    width:100%;
+    border-radius:4px;
+    background-color: #cecece99;
+    height:350px;
+    padding-top:10px;
+    margin-top:15px;
+}
+
+.confirm-btns{
+    margin-left:10%;
+}
+.block-participants{
+    width:80%;
+    height: 100%;
+    border-radius:4px;
+    background-color: #cecece99;
+    padding-top:10px;
+}
+.btn-slot{
+    display: flex;
+    justify-content: center;
+}
+
+#div-confirmation{
+    display:none;
+}
+.site-title{
+   
+    font-size:30px;
+    font-family: mainF;
+}
+.not-member{
+    margin-bottom:5%;
+}
+.connexion-panel{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.connexion-block{
+    border:solid black 1px;
+    border-radius: 10px;
+    background-color: #0000001a;
+}
+.block-item{
+    border:solid black 1px;
+    border-radius: 10px;
+    background-color: #0000001a;
+}
+.text-menu-item a:link{
+    color:white;
+}
+.text-menu-item a:visited{
+    color:white;
+}
+
+.div-form-orga .col-8{
+    border:solid grey 1px;
+    border-radius:5px;
+}
+.div-form-course .col-8{
+    border:solid grey 1px;
+    border-radius:5px;
+}
+.selectioncrea{
+    margin-bottom:10px;
+}
+.tacenter{
+    text-align:center;
+}
+.course-list-item{
+    margin-left:5px;
+}
+.row-content{
+    margin-top: 3%;
+}
+#menu{
+width: 300px;
+height: 400px;
+margin-left:5%;
+}
+
+
+.centerz{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.text-menu-item{
+    margin:auto;
+}
+.nav-bar{
+    height:60px;
+    width:100%;
+    background-color: #49a5bf;
+    padding:0;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.x{
+    display:flex;
+    justify-content: flex-end;
+}
+.details-orga{
+     height: 400px;
+     background-color: #0000001a;
+    display:none;
+}
+#details-orga{
+    text-align: center;
+}
+
+.course-list{
+     height: 400px;
+     background-color: #0000001a;
+    display:none;
+}
+
+#course-details{
+    height: 500px;
+     background-color: #0000001a;
+     display:none;
+}
+#confirm-delete-message{
+    
+}
+#confirm-delete{
+    display:none;
+    flex-direction: column;
+
+}
+.btnrow{
+    display:flex;
+    justify-content: center;
+}
+
+.map-coursedtail{
+    width:600px;
+    height: 500px;
+}
+
+
+.bar{
+    padding-top:5px;
+    padding-left:5%;
+}
+
+.title-menu{
+    text-align:center;
+    padding-top:5px;
+}
+
+#registration-ok{
+    display:none;
+    background-color: rgb(49, 219, 49);
+    text-align: center;
+}
+#registration-failed{
+    display:none;
+    background-color: red;
+    text-align: center;
+
+}
+
+#btn-abandon-course{
+    display:none;
+}
+
+
+
+
+
+
+

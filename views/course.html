@@ -1,0 +1,89 @@
+{% extends "main.html" %}
+{% block content %}
+
+
+<span id="hidden-id" value=""></span>
+<span id="hidden-pseudo" value=""></span>
+
+<div class="row">
+    <div id="map"class="map-coursedtail col-6 margleft"></div>
+    <div id="participants " class="col-5">
+        <div class="block-participants">
+            <p class='margleft'> Participants:</p>
+            <div id="liste-participants">
+             </div>
+
+        <div class="btn-slot">
+            <button class="btn btn-primary" id="btn-participate" type="submit"> Participer</button>
+            <button class="btn btn-danger margleft" id="btn-abandon-course" type="submit"> Abandonner la course</button>
+        </div>
+        <div class="row" id="abandon-course-message">
+            <div class="col-12 tacenter margtop">
+            <p id="participate-message"> </p>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+</div>
+<div class="row" id="participate-form">
+    <div class="col-6 join-course-form margleft">
+        <p class="margleft"> Vos informations </p>
+        <div class="row">
+                <div class="col-12">
+                     <p> Selectionnez la ville correspondant à votre code postal :<p>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12">
+                    <select class="cityselect custom-select" id="citylist"></select>
+                </div>
+
+                
+            </div>
+            <div class="row">
+                <p class="margleft margtop"> Je peux parcourir jusqu'à : </p>
+                    <select id="capacity" class="margtop">
+                            <option value="10"> 10 km </option>
+                            <option value="20"> 20 km </option>
+                            <option value="30"> 30 km </option>
+                            <option value="50"> 50 km </option>
+                            <option value="100"> 100 km </option>
+                            <option value="200"> 200 km </option>
+                            <option value="300"> 300 km </option>
+                        </select>
+            </div>
+            <div class="row">
+                    <div class="btn-slot aligncont margtop">
+                            <button class="btn btn-primary" id="confirm-participate" type="submit"> Valider ma participation </button>
+                        </div>
+            </div>
+            <div class="row registration-ok" id="registration-ok">
+                <div class="col-12">
+                    <p> Participation enregistrée !</p>
+                </div>
+            </div>
+            <div class="row registration-failed" id="registration-failed">
+                    <div class="col-12 margtop">
+                        <p> Vous participez déja à cette course </p>
+                    </div>
+            </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/app.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/ajax.js"></script>
+<script type="text/javascript" src="http://localhost/planhelper/assets/js/participants.js"></script>
+
+{% endblock %} 

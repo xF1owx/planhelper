@@ -1,0 +1,109 @@
+{% extends "main.html" %}
+{% block content %}
+
+<div class="contenu-creation">
+    <div class="col-8">
+        <div class="row">
+            <p class="margleft"> Que voulez-vous creer ? </p>
+        </div>
+        <div class="row selectioncrea">
+            <button class="btn btn-success margleft" id="button-course"> Course </button> <span id='no-orga' class="errorform margleft"></span>
+        </div>
+        <div class="row selectioncrea">
+            <button class="btn btn-success margleft" id="button-orga" > Organisation </button>
+        </div>
+        <div class="row div-form-orga" id="div-form-orga">
+            <div class="col-8 formcontent margleft">
+                <div class="row">
+                    <p class="margleft margtop"> Creation d'une organisation</p>
+                </div>
+                <form id="creaorga">
+                    <div class="row">
+                
+                        <p class="margleft">Nom de l'organisation</p>
+                        <input class="margleft margright" type="text" id="ORGANAME">
+                        <p id="error-orga-name" class="errorform margleft margright"></p>
+                    </div>
+                    <div class="row">
+                        <p class="margleft">Description de l'organisation</p>
+                        <textarea  rows="4" cols="50" class="margleft margbot margright" id="ORGADESC"></textarea>
+                        <p id="error-orga-desc" class="errorform margleft" ></p>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="aligncont">
+                        <button class="btn btn-success margbot" id="create-orga"> Creer </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="row div-form-course" id="div-form-course">
+            <div class="col-8 formcontent margleft">
+                <form id="creacourseform">
+                    <div class="row"><p class="margtop margleft"> Creation d'une course</p></div>
+                    <div class="row">
+                    <p class="margleft">Pour quelle organisation ?</p>
+                
+                    <select id="liste-orga-crea" class="margleft margbot"></select>
+                    </div>
+
+                    <div class="row">
+                    <p class="margleft"> Nom de la course </p>
+                    <input type="text" class="margleft margbot margright" id="COURSENAME">
+                    <p id="error-name" class="errorform margleft"></p>
+                    </div>
+
+                    <div class="row">
+                    <p class="margleft"> Ville de départ</p>
+                    <input type="text" class="margleft margbot margright" id="COURSESTART">
+                    <p id="error-start" class="errorform margleft"></p>
+                    </div>
+
+                    <div class="row">
+                    <p class="margleft"> Ville d'arrivée </p>
+                    <input type="text" class="margleft margbot margright" id="COURSEEND">
+                    <p id="error-end" class="errorform margleft"></p>
+                    </div>
+
+                    <div class="row">
+                    <p class="margleft"> Nom de l'objet</p>
+                    <input type="text" class="margleft margbot margright" id="OBJECTNAME">
+                    <p id="error-name-object" class="errorform margleft"></p>
+                    </div>
+
+                    <div class="row">
+                    <p class="margleft"> Description de la course</p>
+                    <textarea id="COURSEDESC" class="margleft margbot margright" rows="4" cols="50"></textarea>
+                    <p id="error-course-desc" class="errorform margleft"></p>
+                    </div>
+                    <div class="row">
+                        <div class="aligncont">
+                            <button class="btn btn-success margbot" id="create-course"> Creer </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="orga-created-message margleft" id="orga-created-message">
+            <p> Votre organisation a bien été créée !! </p>
+        </div>
+        <div class="course-created-message margleft" id="course-created-message">
+            <p> Votre course a bien été créée !! </p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block script %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/login.js"></script>
+<script type="text/javascript" src="assets/js/ajax.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/loadinfo.js"></script>
+<script type="text/javascript" src="assets/js/organav.js"></script>
+
+{% endblock %} 

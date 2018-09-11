@@ -1,0 +1,66 @@
+{% extends "main.html" %}
+{% block menu %}
+{% endblock %}
+{% block content %} 
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 ">
+            <h2>Creez votre compte</h2>
+                <form id="register-form"> 
+                    <p>Pseudo</p>
+                        <input type="text" id="PSEUDO"> 
+                        <p id="errorpseudo" class="errorform"></p>
+                        <p id="alreadyexist" class="errorform"></p>
+
+                    <p>Adresse Mail</p>
+                        <input type="text" id="MAIL"> 
+                    <p id="errormail" class="errorform"></p>
+                    
+                    <p>Code Postal</p>
+                        <input type="text" id="CP"> 
+                        <p id="errorcp" class="errorform"></p>
+                    <p>Ville</p>
+                        <input type="text" id="VILLE"> 
+                        <p id="errorville" class="errorform"></p>
+                    <p>Nom</p>
+                        <input type="text" id="NOM"> 
+                        <p id="errornom" class="errorform"></p>
+                    <p>Prenom</p>
+                        <input type="text" id="PRENOM"> 
+                        <p id="errorprenom" class="errorform"></p>
+                    <p>Adresse</p>
+                        <input type="text" id="ADDRESS"> 
+                    <p>Numero de Telephone</p>
+                        <input type="text" id="PHONE"> </br>
+                        <p id="errorphone" class="errorform"></p>
+                    <p>Mot de Passe</p>
+                        <input type="password" id="PASSWORD"> </br>
+                        <p id="errorpass1" class="errorform"></p>
+                    <p>Confirmer mot de passe</p>
+                        <input type="password" id="verifpass"> </br>
+                        <p id="errorpass" class="errorform"></p>
+                    
+                        <button type="submit" id="registerbtn" class="btn btn-success">Creer</button>
+
+
+                </form>
+
+                
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} 
+{% block script %} 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ajax.js"></script>
+
+
+
+
+
+
+{% endblock %} 
