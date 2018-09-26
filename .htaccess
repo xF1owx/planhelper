@@ -1,0 +1,26 @@
+#on suit les liens symboliques
+
+Options +FollowSymLinks
+
+#Activation du mod rewrite d'apache
+
+RewriteEngine On
+
+RewriteRule ^home index.php [L,QSA]
+
+RewriteRule ^register index.php [L,QSA]
+
+RewriteRule ^planhelper index.php [L,QSA]
+
+RewriteRule ^accountPage index.php [L,QSA]
+
+RewriteRule ^creation index.php [L,QSA]
+
+RewriteRule ^orga index.php [L,QSA]
+
+RewriteRule ^participate index.php [L,QSA]
+
+RewriteRule ^course/([0-9]+)$ index.php?id=$1 [L,QSA]
+
+
+
