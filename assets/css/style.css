@@ -2,19 +2,44 @@
     font-family: mainF;
     src: url(assets/fonts/Righteous-Regular.ttf);
 }
-
+html{
+    height:100%;
+}
+.body{
+    height:100%;
+     
+}
+body{
+    height:100%;
+    background-image: url("../dd.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .menu{
     height:80px;
     background-color: #49a5bf; 
     margin-top:10px;
     margin-top: 0;
     margin-bottom:20px;
-    border-bottom: 2px solid rgba(112, 121, 253, 0.959);
+    border-bottom: 2px solid rgba(49, 49, 54, 0.959);
 }
 .menu-separator{
-    font-size: 20px;
+    font-size: 10px;
     color: white;
 
+}
+
+.showthisuser{
+    border-radius:20px;
+    height: 30px;
+    width: 50%;
+    color: white;
+    background-color: #49a5bf;
+    border-style: solid;
+}
+.showthisuser:hover{
+    border-color:black;
+    transition-duration: 1s;
 }
 .menu-logo{
     height: 100%;
@@ -39,6 +64,7 @@ align-items: center;
     width: 80%;
     background-color: #cecece99;
     margin-left:58px;
+    border: 2px solid #49a5bf;
 }
 .notifications{
     width: 80%;
@@ -52,6 +78,7 @@ align-items: center;
 }
 .helloblock{
     background-color: #cecece99;
+    border: 2px solid #49a5bf;
 }
 .menu-btns{
     height: 100%;
@@ -96,6 +123,8 @@ align-items: center;
 .orgalist{
     height: 400px;
     background-color: #0000001a;
+    border: 2px solid #49a5bf;
+    
 
 }
 .margtop{
@@ -121,7 +150,12 @@ align-items: center;
 #map{
 width: 500px;
 height: 400px;
+border: 2px solid #49a5bf;
 
+}
+
+.block-participants{
+    border: 2px solid #49a5bf;
 }
 #div-form-orga{
     display:none;
@@ -177,13 +211,32 @@ height: 400px;
 }
 .orga-selection{
     width:100%;
-    border-radius:4px;
+    
     background-color: #cecece99;
+    border-radius:20px;
+    height: 30px;
+    width: 100%;
+    color: white;
+    background-color: #49a5bf;
+    border-style: solid;
+}
+.orga-selection:hover{
+    border-color:black;
+    transition-duration: 1s;
 }
 .course-selection{
     width:100%;
     border-radius:4px;
     background-color: #cecece99;
+    color: white;
+    background-color: #49a5bf;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.course-selection:hover{
+    border-color:black;
+    transition-duration: 1s;
 }
 .join-course-form{
     width:100%;
@@ -216,22 +269,31 @@ height: 400px;
    
     font-size:30px;
     font-family: mainF;
+    margin-top:5%;
+}
+.fond{
+    background-image: url("../186423.jpg"); 
+    height:100%;
 }
 .not-member{
     margin-bottom:5%;
 }
+.container{
+    height:100%;
+}
 .connexion-panel{
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    padding-top: 5%;
 }
 .connexion-block{
     border:solid black 1px;
     border-radius: 10px;
-    background-color: #0000001a;
+    background-color:  #62bdd6bd;
+    max-width: 60%;
 }
 .block-item{
-    border:solid black 1px;
+    border: 2px solid #49a5bf;
     border-radius: 10px;
     background-color: #0000001a;
 }
@@ -295,7 +357,8 @@ margin-left:5%;
 .details-orga{
      height: 400px;
      background-color: #0000001a;
-    display:none;
+     display:none;
+     border: 2px solid #49a5bf;
 }
 #details-orga{
     text-align: center;
@@ -305,12 +368,15 @@ margin-left:5%;
      height: 400px;
      background-color: #0000001a;
     display:none;
+    border: 2px solid #49a5bf;
 }
 
 #course-details{
     height: 500px;
      background-color: #0000001a;
      display:none;
+     border: 2px solid #49a5bf;
+    
 }
 #confirm-delete-message{
     
